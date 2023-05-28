@@ -14,7 +14,7 @@ class AsyncForm {
    * */
   constructor(element) {
     if(!element) {
-      throw new Error;
+      throw new Error("Ошибка!");
     }
     this.element = element;
     this.registerEvents();
@@ -40,12 +40,7 @@ class AsyncForm {
    * */
   getData() {
     let formData = new FormData(this.element);
-    let entries = formData.entries();
-    let obj = {};
-    for (let item of entries){
-      obj[item[0]] = item[1];
-    }
-    return obj;
+    return Object.fromEntries(formData.entries());
   }
 
   onSubmit(options){
@@ -57,7 +52,6 @@ class AsyncForm {
    * данные, полученные из метода getData()
    * */
   submit() {
-    let data = this.getData();
-    this.onSubmit(data);
+    this.onSubmit(this.getData());
   }
 }

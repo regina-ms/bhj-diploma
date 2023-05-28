@@ -1,3 +1,4 @@
+
 /**
  * Класс User управляет авторизацией, выходом и
  * регистрацией пользователя из приложения
@@ -27,10 +28,7 @@ class User {
    * из локального хранилища
    * */
   static current() {
-    if(localStorage.length !== 0) {
-      let item = localStorage.getItem("user");
-      return JSON.parse(item);
-    }
+    return JSON.parse(localStorage.getItem("user"));
   }
 
   /**
@@ -38,21 +36,17 @@ class User {
    * авторизованном пользователе.
    * */
   static fetch(callback) {
-    callback = (err, response) => {
-      if(response.success === true) {
-        let user = response.user;
-        for(let key in user) {
-          this.setCurrent(key);
-        }
-      } else {
-        this.unsetCurrent();
-      }
-      return response;
-    }
     createRequest({
       url: this.URL + "/current",
       method: "GET",
-      callback,
+      callback: (err, response) => {
+        if(response.success === true) {
+          this.setCurrent(response.user)
+        } else {
+          this.unsetCurrent(response.user)
+        }
+        callback(err, response);
+      },
     })
   }
 
@@ -84,17 +78,18 @@ class User {
    * User.setCurrent.
    * */
   static register(data, callback) {
-    callback = (err, response) => {
-      if(response.success === true) {
-        let user = response.user;
-        this.setCurrent(user);
-      }
-    }
     createRequest({
       url: this.URL + "/register",
       method: "POST",
       data,
-      callback,
+      callback: (err, response) => {
+        if(response.success === true) {
+          this.setCurrent(response.user)
+        } else {
+          throw new Error(response.error);
+        }
+        callback(err, response);
+      },
     })
   }
 
@@ -103,11 +98,16 @@ class User {
    * выхода необходимо вызвать метод User.unsetCurrent
    * */
   static logout(callback) {
-    callback = this.unsetCurrent();
     createRequest({
       url: this.URL + "/logout",
       method: "POST",
-      callback,
+      callback: (err, response) => {
+        if(response.success === true) {
+          this.unsetCurrent();
+          App.setState('init');
+        }
+        callback(err, response);
+      },
     })
   }
 }

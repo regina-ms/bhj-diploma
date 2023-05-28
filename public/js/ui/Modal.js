@@ -13,7 +13,7 @@ class Modal {
    * */
   constructor(element){
     if(!element) {
-      throw new Error;
+      throw new Error("Ошибка!");
     }
     this.element = element;
     this.registerEvents();

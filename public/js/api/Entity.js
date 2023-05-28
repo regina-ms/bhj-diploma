@@ -12,13 +12,12 @@ class Entity {
    * (в зависимости от того, что наследуется от Entity)
    * */
   static list(data, callback){
-    let obj = {
+    createRequest({
       url: this.URL,
-      data: data,
+      data,
       callback,
       method: "GET",
-    }
-    createRequest(obj);
+    });
 
   }
 
@@ -31,7 +30,7 @@ class Entity {
     let obj = {
       url: this.URL,
       data: data,
-      callback: callback(err, response),
+      callback,
       method: "PUT",
     }
     createRequest(obj);
@@ -45,7 +44,7 @@ class Entity {
     let obj = {
       url: this.URL,
       data: data,
-      callback: callback(err, response),
+      callback,
       method: "DELETE",
     }
     createRequest(obj);
