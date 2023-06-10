@@ -27,9 +27,8 @@ class UserWidget {
    * */
   update(){
     if(User.current()) {
-      document.querySelector(".user-name").textContent = JSON.parse(localStorage.getItem("user")).name;
+      this.element.querySelector(".user-name").textContent = User.current().name;
     }
-    
   }
 }
 

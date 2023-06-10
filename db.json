@@ -35,6 +35,24 @@
       "email": "dfsb@vfa",
       "password": "123456",
       "id": "cb1lqx9n4li608a0w"
+    },
+    {
+      "name": "Oleg",
+      "email": "o@bk.ru",
+      "password": "555",
+      "id": "cb1lqx940lipstt93"
+    },
+    {
+      "name": "alfa",
+      "email": "7917@br.ru",
+      "password": "ggg",
+      "id": "cb1lqx108liptoiqu"
+    },
+    {
+      "name": "j",
+      "email": "k@re.ru",
+      "password": "6666",
+      "id": "cb1lqx8g8liptts70"
     }
   ],
   "accounts": [
@@ -52,66 +70,6 @@
       "name": "Бизнес",
       "user_id": "1",
       "id": "3"
-    },
-    {
-      "name": "Регина",
-      "user_id": "cb1lqx1w4li5zq8g3",
-      "id": "cb1lqx9tcli62obrs"
-    },
-    {
-      "name": "alfa",
-      "user_id": "cb1lqx1w4li5zq8g3",
-      "id": "cb1lqx9c8li62ro52"
-    },
-    {
-      "name": "a",
-      "user_id": "cb1lqx1w4li5zq8g3",
-      "id": "cb1lqx89wli634mb9"
-    },
-    {
-      "name": "c",
-      "user_id": "cb1lqx1w4li5zq8g3",
-      "id": "cb1lqx83oli65vbkt"
-    },
-    {
-      "name": "gsrhw",
-      "user_id": "cb1lqx1w4li5zq8g3",
-      "id": "cb1lqxa64li6axabx"
-    },
-    {
-      "name": "fff",
-      "user_id": "cb1lqx1w4li5zq8g3",
-      "id": "cb1lqxah8li6b0zx2"
-    },
-    {
-      "name": "545454",
-      "user_id": "cb1lqx1w4li5zq8g3",
-      "id": "cb1lqxa8wli6baonp"
-    },
-    {
-      "name": "drge",
-      "user_id": "cb1lqx1w4li5zq8g3",
-      "id": "cb1lqx8v4li6bbksb"
-    },
-    {
-      "name": "adfv",
-      "user_id": "cb1lqx1w4li5zq8g3",
-      "id": "cb1lqxa24li6bcods"
-    },
-    {
-      "name": "dzfgzdgz",
-      "user_id": "cb1lqx1w4li5zq8g3",
-      "id": "cb1lqxa2sli6bdhh0"
-    },
-    {
-      "name": "jhihihipiji",
-      "user_id": "cb1lqx1w4li5zq8g3",
-      "id": "cb1lqxa9wli6beihu"
-    },
-    {
-      "name": "6541646511+",
-      "user_id": "cb1lqx1w4li5zq8g3",
-      "id": "cb1lqxa54li6bgblo"
     }
   ],
   "transactions": [
@@ -249,78 +207,6 @@
       "sum": 300000,
       "type": "expense",
       "user_id": "1"
-    },
-    {
-      "id": "cb1lqx9s4li6gmouo",
-      "type": "income",
-      "name": "111",
-      "sum": 1111,
-      "account_id": "cb1lqx9c8li62ro52",
-      "user_id": "cb1lqx1w4li5zq8g3",
-      "created_at": "2023-05-27T20:44:17.615Z"
-    },
-    {
-      "id": "cb1lqxap8li6gnbox",
-      "type": "expense",
-      "name": "242q",
-      "sum": 11,
-      "account_id": "cb1lqx9c8li62ro52",
-      "user_id": "cb1lqx1w4li5zq8g3",
-      "created_at": "2023-05-27T20:44:47.216Z"
-    },
-    {
-      "id": "cb1lqx83oli6goa6u",
-      "type": "income",
-      "name": "vdzf",
-      "sum": 343,
-      "account_id": "cb1lqx9tcli62obrs",
-      "user_id": "cb1lqx1w4li5zq8g3",
-      "created_at": "2023-05-27T20:45:31.925Z"
-    },
-    {
-      "id": "cb1lqx81sli78et02",
-      "type": "income",
-      "name": "jhb",
-      "sum": 654,
-      "account_id": "cb1lqx9tcli62obrs",
-      "user_id": "cb1lqx1w4li5zq8g3",
-      "created_at": "2023-05-28T09:41:58.993Z"
-    },
-    {
-      "id": "cb1lqx7rgli792ap3",
-      "type": "income",
-      "name": "refrae",
-      "sum": 1111,
-      "account_id": "cb1lqx9c8li62ro52",
-      "user_id": "cb1lqx1w4li5zq8g3",
-      "created_at": "2023-05-28T10:00:15.014Z"
-    },
-    {
-      "id": "cb1lqx54gli7hp7nv",
-      "type": "income",
-      "name": "last",
-      "sum": 654,
-      "account_id": "cb1lqx9tcli62obrs",
-      "user_id": "cb1lqx1w4li5zq8g3",
-      "created_at": "2023-05-28T14:02:01.098Z"
-    },
-    {
-      "id": "cb1lqxx0li7ivhbu",
-      "type": "expense",
-      "name": "Кекс",
-      "sum": 654,
-      "account_id": "cb1lqx9c8li62ro52",
-      "user_id": "cb1lqx1w4li5zq8g3",
-      "created_at": "2023-05-28T14:34:53.178Z"
-    },
-    {
-      "id": "cb1lqxzsli7ivzcl",
-      "type": "expense",
-      "name": "Кекс",
-      "sum": 11,
-      "account_id": "cb1lqx9tcli62obrs",
-      "user_id": "cb1lqx1w4li5zq8g3",
-      "created_at": "2023-05-28T14:35:16.532Z"
     }
   ]
 }

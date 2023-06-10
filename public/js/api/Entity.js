@@ -27,13 +27,12 @@ class Entity {
    * что наследуется от Entity)
    * */
   static create(data, callback) {
-    let obj = {
+    createRequest({
       url: this.URL,
       data: data,
       callback,
       method: "PUT",
-    }
-    createRequest(obj);
+    });
   }
 
   /**
@@ -41,12 +40,11 @@ class Entity {
    * (в зависимости от того, что наследуется от Entity)
    * */
   static remove(data, callback ) {
-    let obj = {
+    createRequest({
       url: this.URL,
       data: data,
       callback,
       method: "DELETE",
-    }
-    createRequest(obj);
+    });
   }
 }

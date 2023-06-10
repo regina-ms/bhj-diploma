@@ -41,7 +41,6 @@ class Sidebar {
       modalLogin.open();
     }
     document.querySelector(".menu-item_register").onclick = () => {
-      console.log(document.querySelector(".menu-item_register"));
       let modalRegister = App.getModal("register");
       modalRegister.open();
     }

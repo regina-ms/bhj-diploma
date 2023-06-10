@@ -85,8 +85,6 @@ class User {
       callback: (err, response) => {
         if(response.success === true) {
           this.setCurrent(response.user)
-        } else {
-          throw new Error(response.error);
         }
         callback(err, response);
       },
