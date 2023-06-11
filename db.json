@@ -70,6 +70,21 @@
       "name": "Бизнес",
       "user_id": "1",
       "id": "3"
+    },
+    {
+      "name": "sber",
+      "user_id": "cb1lqx1w4li5zq8g3",
+      "id": "1m2oc9wklirh6thb"
+    },
+    {
+      "name": "alfa",
+      "user_id": "cb1lqx1w4li5zq8g3",
+      "id": "1m2oc9oclirh6xe9"
+    },
+    {
+      "name": "tink",
+      "user_id": "cb1lqx1w4li5zq8g3",
+      "id": "1m2oca5klirh71y7"
     }
   ],
   "transactions": [
